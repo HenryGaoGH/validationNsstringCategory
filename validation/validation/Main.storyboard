@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hy7-ez-jc3">
+                                <rect key="frame" x="36" y="322.5" width="303" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fR-td-eFS">
+                                <rect key="frame" x="172" y="242.5" width="31" height="30"/>
+                                <state key="normal" title="验证"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="od6-k3-vfF"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="QcL-Mq-Vuy">
+                                <rect key="frame" x="20" y="182.5" width="335" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrX-nQ-v19">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
+                                        <state key="normal" title="手机"/>
+                                        <connections>
+                                            <action selector="validationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5b-cB-AjX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBO-Jv-WeO">
+                                        <rect key="frame" x="84" y="0.0" width="83.5" height="30"/>
+                                        <state key="normal" title="邮箱"/>
+                                        <connections>
+                                            <action selector="validationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbx-d6-RCR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIb-0I-fw0">
+                                        <rect key="frame" x="167.5" y="0.0" width="84" height="30"/>
+                                        <state key="normal" title="密码"/>
+                                        <connections>
+                                            <action selector="validationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OPf-ry-6G0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="44" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qg9-Ga-O7v">
+                                        <rect key="frame" x="251.5" y="0.0" width="83.5" height="30"/>
+                                        <state key="normal" title="账号">
+                                            <color key="titleColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="validationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R1s-k2-mRa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aIb-0I-fw0" firstAttribute="width" secondItem="JrX-nQ-v19" secondAttribute="width" id="Hvh-Vl-5IO"/>
+                                    <constraint firstItem="aIb-0I-fw0" firstAttribute="height" secondItem="JrX-nQ-v19" secondAttribute="height" id="MPd-cs-B17"/>
+                                    <constraint firstItem="qg9-Ga-O7v" firstAttribute="height" secondItem="JrX-nQ-v19" secondAttribute="height" id="QUv-8d-hYu"/>
+                                    <constraint firstItem="kBO-Jv-WeO" firstAttribute="width" secondItem="JrX-nQ-v19" secondAttribute="width" id="fYW-25-UxL"/>
+                                    <constraint firstItem="kBO-Jv-WeO" firstAttribute="height" secondItem="JrX-nQ-v19" secondAttribute="height" id="pzM-bW-0P4"/>
+                                    <constraint firstItem="qg9-Ga-O7v" firstAttribute="width" secondItem="JrX-nQ-v19" secondAttribute="width" id="xBS-6d-fdE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="Hy7-ez-jc3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2mZ-ZF-hdj"/>
+                            <constraint firstItem="4fR-td-eFS" firstAttribute="top" secondItem="QcL-Mq-Vuy" secondAttribute="bottom" constant="30" id="BvZ-9N-xcj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hy7-ez-jc3" secondAttribute="trailing" constant="20" id="Gjk-EV-Tx8"/>
+                            <constraint firstItem="QcL-Mq-Vuy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFr-hJ-pRS"/>
+                            <constraint firstItem="4fR-td-eFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zzf-Hi-5Ms"/>
+                            <constraint firstItem="Hy7-ez-jc3" firstAttribute="top" secondItem="4fR-td-eFS" secondAttribute="bottom" constant="50" id="aF5-nv-qLD"/>
+                            <constraint firstItem="QcL-Mq-Vuy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="cx1-E2-8R6"/>
+                            <constraint firstItem="Hy7-ez-jc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="czj-Lw-CMi"/>
+                            <constraint firstAttribute="trailing" secondItem="QcL-Mq-Vuy" secondAttribute="trailing" constant="20" id="j3l-Qi-W6k"/>
+                            <constraint firstItem="Hy7-ez-jc3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="kCZ-5c-nOR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tF" destination="Hy7-ez-jc3" id="PfI-ep-rW5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
